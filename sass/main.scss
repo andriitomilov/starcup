@@ -1,9 +1,12 @@
 @import "./utils/vars";
 @import "./utils/placeholder";
+@import "./utils/mixins";
 
 @import "./base/common";
+@import "./base/containers";
 
 @import "./common/nav";
+@import "./common/title";
 
 @import "./layout/header";
-
+@import "./layout/hero";

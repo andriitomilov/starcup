@@ -1,0 +1,11 @@
+@mixin centeredByFlex($display: flex, $content: center, $items: center) {
+    display: $display;
+    justify-content: $content;
+    align-items: $items;    
+}
+
+@mixin centeredBackground($repeat: no-repeat, $position: center, $size: cover) {
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;   
+}

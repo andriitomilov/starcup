@@ -1,0 +1,21 @@
+.title {
+    position: relative;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.title__after::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 2px;
+
+    background-color: $color-secondary;
+}
