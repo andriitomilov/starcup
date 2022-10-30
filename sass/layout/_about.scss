@@ -1,0 +1,66 @@
+.about {
+}
+.about__container {
+  display: flex;
+//   justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.about__box {
+}
+.about__title {
+  margin-bottom: 38px;
+}
+.about__subtitle {
+  max-width: 460px;
+  margin-bottom: 38px;
+}
+.about__content {
+  margin-bottom: 38px;
+  max-width: 415px;
+}
+.about__list {
+  padding-left: 30px;
+  list-style: none;
+  margin-bottom: 48px;
+
+  & .about__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.about__item {
+  position: relative;
+}
+.about__text {
+  color: $color-transparent;
+}
+.about__checkmark {
+  position: absolute;
+  top: 3px;
+  left: -30px;
+
+  fill: $color-accent;
+}
+
+.about-box__list {
+  @extend %list;
+  text-align: center;
+}
+
+.about-box__item {
+  max-width: 155px;
+
+  .about-box__list &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .about-box__list &:nth-child(2){
+    max-width: 140px;
+  }
+}
+
+.about__amount {
+  font-size: 60px;
+  line-height: 82px;
+
+  color: $color-accent;
+}

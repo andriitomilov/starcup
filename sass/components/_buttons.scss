@@ -1,0 +1,22 @@
+.btn-link {
+  display: inline-block;
+  padding: 10px 15px;
+  min-width: 195px;
+
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $color-secondary;
+  background-color: $bg-color-btn;
+
+  border: 1px solid $bg-color-btn;
+  border-radius: 10px;
+
+  transition: background-color $transition;
+
+  &:hover, &:focus {
+    background-color: $color-accent;
+  }
+}

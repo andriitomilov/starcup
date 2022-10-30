@@ -4,9 +4,15 @@
 
 @import "./base/common";
 @import "./base/containers";
+@import "./base/section";
 
-@import "./common/nav";
-@import "./common/title";
+@import "./components/nav";
+@import "./components/title";
+@import "./components/subtitle";
+@import "./components/buttons";
 
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/menu";

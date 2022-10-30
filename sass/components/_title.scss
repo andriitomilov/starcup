@@ -12,10 +12,18 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 120px;
+    margin-left: 10px;
     transform: translateY(-50%);
     width: 30px;
     height: 2px;
 
     background-color: $color-secondary;
+}
+
+.title--accent{
+  color: $color-accent;
+}
+
+.title--accent.title__after::after{
+  background-color: $color-accent;
 }
