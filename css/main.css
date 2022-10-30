@@ -1,0 +1,72 @@
+.menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  padding-left: 355px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #202738;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin-bottom: 50px;
+  color: #c46b48;
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.menu__link {
+  display: inline-block;
+  font-family: "Oranienbaum", serif;
+  font-size: 32px;
+  line-height: 1.16;
+  color: #FFFFFF;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+.menu__link:hover, .menu__link:focus {
+  color: #c46b48;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 100%;
+  background-color: #202738;
+}/*# sourceMappingURL=main.css.map */

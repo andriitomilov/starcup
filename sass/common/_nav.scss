@@ -1,0 +1,39 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+.logo {
+    margin-bottom: 50px;
+    color: $color-accent;
+}
+.logo__icon {
+    fill: currentColor;
+}
+.menu {
+    @extend %list;
+}
+.menu__item {
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.menu__link {
+    display: inline-block;   
+
+    font-family: $font-family-secondary;
+    font-size: 32px;
+    line-height: 1.16;
+
+    color: $color-secondary;
+
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $color-accent
+    }
+}
