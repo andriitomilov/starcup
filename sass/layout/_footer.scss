@@ -1,0 +1,21 @@
+.footer {
+    text-align: center;
+    background-color: $bg-color-footer
+}
+.footer__container{
+    @include centeredByFlex(flex, space-between, center);
+}
+.footer__box {
+}
+.footer__title{
+    margin-bottom: 30px;
+}
+.footer__link {
+    color: inherit;
+
+    transition: color $transition;
+
+    &:hover, &:focus {
+        color: $color-accent;
+    }
+}

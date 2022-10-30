@@ -1,10 +1,12 @@
 .team {
     background-color: $color-primary;
-}
+    background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay);
+}   
 .team__overlay {
     margin: 0 auto;
     max-width: 1245px;
 
+    background-color: $color-primary;
     background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay), url(../images/team-bg.jpg);
     @include centeredBackground(no-repeat, left center, contain);
 }
