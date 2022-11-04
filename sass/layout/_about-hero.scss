@@ -1,0 +1,34 @@
+.about-hero {
+  color: $color-secondary;
+}
+.about-hero__container {
+  @include centeredByFlex(flex, space-between, flex-end);
+}
+.about-hero__overlay {
+  margin: 0 auto;
+  max-width: 1245px;
+
+  background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay),
+    url(../images/about-hero-bg.jpg);
+  @include centeredBackground();
+}
+.about-hero__title {
+  margin-bottom: 60px;
+  font-family: $font-family-title;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1,26;  
+}
+
+.about-hero__content-box {
+  padding: 222px 93px 70px;
+  background-color: $bg-color-accent;
+}
+.about-hero__subtitle {
+  margin-bottom: 63px;
+}
+.about-hero__text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.35;
+}

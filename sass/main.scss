@@ -11,6 +11,7 @@
 @import "./components/subtitle";
 @import "./components/buttons";
 
+// main page
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/about";
@@ -19,3 +20,9 @@
 @import "./layout/galery";
 @import "./layout/reviews";
 @import "./layout/footer";
+
+// about page
+
+@import "./layout/about-hero";
+@import "./layout/about-desc";
+@import "./layout/about-team";

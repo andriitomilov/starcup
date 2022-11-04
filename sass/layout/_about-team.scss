@@ -1,0 +1,39 @@
+.about-team {
+  position: relative;
+
+  text-align: center;
+
+  background-color: $color-primary;
+}
+.card-set {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-set__list {
+  flex-basis: calc(100% / 4);
+}
+.card-set__thumb {
+}
+.card-set__content {
+  padding: 30px 45px;
+}
+.card-set__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+.card-set__text {
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-secondary;
+}
+
+.about-team__galery {
+  position: absolute;
+  bottom: -254px;
+  display: flex;
+}

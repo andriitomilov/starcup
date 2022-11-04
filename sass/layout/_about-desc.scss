@@ -1,0 +1,12 @@
+.about-desc__container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-desc__content{
+    max-width: 511px;
+}
+.about-desc__box {
+    & p:not(:last-child){
+        margin-bottom: 20px;
+    }
+}

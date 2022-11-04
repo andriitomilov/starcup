@@ -1,4 +1,4 @@
-.grid, .about-box__list, .menu {
+.card-set, .grid, .about-box__list, .menu {
   padding-left: 0;
   list-style: none;
 }
@@ -44,6 +44,14 @@ img {
 
 .section {
   padding: 70px 0;
+}
+
+.section--large-top {
+  padding-top: 324px;
+}
+
+.section--bottom-large {
+  padding-bottom: 354px;
 }
 
 .nav {
@@ -460,4 +468,118 @@ img {
 }
 .footer__link:hover, .footer__link:focus {
   color: #c46b48;
+}
+
+.about-hero {
+  color: #FFFFFF;
+}
+
+.about-hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-hero__overlay {
+  margin: 0 auto;
+  max-width: 1245px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/about-hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/about-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-hero__title {
+  margin-bottom: 60px;
+  font-family: "Original Surfer", cursive;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1, 26;
+}
+
+.about-hero__content-box {
+  padding: 222px 93px 70px;
+  background-color: rgba(196, 107, 72, 0.6);
+}
+
+.about-hero__subtitle {
+  margin-bottom: 63px;
+}
+
+.about-hero__text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.35;
+}
+
+.about-desc__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-desc__content {
+  max-width: 511px;
+}
+
+.about-desc__box p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about-team {
+  position: relative;
+  text-align: center;
+  background-color: #202738;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-set__list {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.card-set__content {
+  padding: 30px 45px;
+}
+
+.card-set__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #c46b48;
+}
+
+.card-set__text {
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.about-team__galery {
+  position: absolute;
+  bottom: -254px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
