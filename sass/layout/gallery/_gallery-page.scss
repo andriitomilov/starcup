@@ -1,0 +1,43 @@
+.gallery-page {
+}
+
+.gallery-set {
+    @extend %list;
+}
+.gallery-set__item {
+    .gallery-page &:not(:last-child){
+        padding-bottom: 70px;
+        border-bottom: 1px solid $bg-color-accent;
+    }
+    .gallery-page &:not(:first-child){
+        padding-top: 70px;
+    }
+}
+.gallery-page__wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.gallery-set__wrap {
+    max-width: 415px;
+}
+
+.gallery-page__title,
+.gallery-page-subtitle {
+    margin-bottom: 40px;
+}
+
+.gallery-sublist {
+    @extend %list;
+    display: flex;
+}
+.gallery-sublist__item {
+}
+
+.gallery-set .gallery-set__item:nth-child(odd) .gallery-sublist{
+    justify-content: end;
+}
+
+.gallery-set .gallery-set__item:nth-child(even) .gallery-page__wrap .gallery-set__wrap {
+    order: -1;
+}

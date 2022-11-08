@@ -1,4 +1,4 @@
-.card-set, .grid, .about-box__list, .menu {
+.gallery-sublist, .gallery-set, .card-set, .grid, .about-box__list, .menu {
   padding-left: 0;
   list-style: none;
 }
@@ -582,4 +582,49 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.gallery-page .gallery-set__item:not(:last-child) {
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(196, 107, 72, 0.6);
+}
+.gallery-page .gallery-set__item:not(:first-child) {
+  padding-top: 70px;
+}
+
+.gallery-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.gallery-set__wrap {
+  max-width: 415px;
+}
+
+.gallery-page__title,
+.gallery-page-subtitle {
+  margin-bottom: 40px;
+}
+
+.gallery-sublist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-set .gallery-set__item:nth-child(odd) .gallery-sublist {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.gallery-set .gallery-set__item:nth-child(even) .gallery-page__wrap .gallery-set__wrap {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }/*# sourceMappingURL=main.css.map */
