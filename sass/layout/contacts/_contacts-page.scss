@@ -1,0 +1,97 @@
+.contacts-page__list {
+  @include centeredByFlex($content: space-between);
+}
+.contacts-page__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contacts-page__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacts-page__icon {
+  fill: $color-accent;
+}
+
+.contacts-page__link {
+  color: inherit;
+
+  transition: color $transition;
+
+  .contacts-page__wrap &:hover,
+  .contacts-page__wrap &:focus {
+    color: $color-accent;
+  }
+}
+.contacts-page__text {
+  font-size: 18px;
+  line-height: 1.39;
+}
+.contacts-page__accent {
+  text-transform: uppercase;
+  color: $color-accent;
+}
+.contacts-form {
+  background-color: $color-primary;
+  text-align: center;
+}
+
+.contacts-form__title {
+  margin-bottom: 20px;
+}
+
+.contacts-form__subtitle {
+  margin-bottom: 50px;
+}
+.request-form {
+}
+.request-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.request-form__list {
+  width: 510px;
+}
+.request-form__item {
+  .request-form__list &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.request-form__field {
+  color: $color-secondary;
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid $color-form-border;
+
+  outline: none;
+
+  transition: border-color $transition;
+  &:focus,
+  &:hover{
+    border-color: $color-secondary;
+  }
+}
+.request-form__input {
+  width: 100%;
+  height: 50px;
+}
+
+.request-form__text-area {
+  width: 510px;
+  resize: none;
+}
+
+.request-form__field::placeholder{
+    color: $color-form-border;
+
+    transition: color $transition;
+}
+.request-form__field:hover::placeholder,
+.request-form__field:focus::placeholder{
+    color: $color-secondary;
+}
