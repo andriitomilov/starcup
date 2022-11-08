@@ -4,7 +4,7 @@
 .reviews__title {
   margin-bottom: 48px;
 }
-.reviews__img {
+.reviews__thumb {
   margin-bottom: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -13,12 +13,22 @@
   border-radius: 50%;
 
   background-color: $color-primary;
+  overflow: hidden;
 }
 .reviews__text {
   max-width: 865px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
   font-size: 25px;
   line-height: 1.36;
+}
+
+.reviews__list{
+  @extend %list;
+}
+
+.reviews__list .reviews__item:not(:last-child){
+  margin-bottom: 30px;
 }

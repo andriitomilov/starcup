@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -219,12 +223,62 @@
         <section class="reviews section">
             <div class="container">
                 <h2 class="title title--accent reviews__title">Reviews</h2>
-                <div class="reviews__img"></div>
-                <p class="reviews__text">
-                    I am a website developer and work from home. When clients want with me
-                    meet, I often invite them to this cafe. It's quiet and nice here
-                    You can calmly discuss work issues over a cup of coffee.
-                </p>
+
+                <ul class="reviews__list single-item">
+
+                    <li class="reviews__item">
+                        <article>
+                            <div class="reviews__thumb">
+                                <img src="./images/reviews/reviews-img-01.jpg" alt="girl" class="reviews__img"
+                                    width="100" height="100">
+                            </div>
+                            <blockquote class="reviews__text">
+                                Great cozy cafe. I often go here after work on my way home. For coffee, you can order
+                                delicious, low-calorie
+                                desserts.
+                                In the cafe itself, calm, pleasant music constantly sounds, you can sit and relax,
+                                relax.
+                            </blockquote>
+                            <p class="reviews__author">Anna</p>
+                        </article>
+
+                    </li>
+
+                    <li class="reviews__item">
+                        <article>
+                            <div class="reviews__thumb">
+                                <img src="./images/reviews/reviews-img-02.jpg" alt="girl" class="reviews__img"
+                                    width="100" height="100">
+                            </div>
+                            <blockquote class="reviews__text">
+                                We come here all the time with colleagues during our lunch break. Excellent coffee is
+                                brewed
+                                here, just what you need to
+                                cheer up if you don’t have enough strength to complete the day.
+                            </blockquote>
+                            <p class="reviews__author">Marry</p>
+                        </article>
+
+                    </li>
+
+                    <li class="reviews__item">
+                        <article>
+                            <div class="reviews__thumb">
+                                <img src="./images/reviews/reviews-img-03.jpg" alt="man" class="reviews__img"
+                                    width="100" height="100">
+                            </div>
+                            <blockquote class="reviews__text">
+                                I am a website developer and work from home. When clients want to meet me, I often
+                                invite them to this cafe. It is
+                                quiet
+                                and pleasant here, you can calmly discuss work issues over a cup of coffee.
+                            </blockquote>
+                            <p class="reviews__author">Felix</p>
+                        </article>
+
+                    </li>
+                </ul>
+
             </div>
         </section>
 
@@ -250,6 +304,25 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.single-item').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                // speed: 1000,
+                dots: true,
+                // fade: true,
+                // cssEase: 'linear', 
+            });
+        });
+    </script>
 </body>
 
 </html>

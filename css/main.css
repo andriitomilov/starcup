@@ -1,4 +1,4 @@
-.gallery-sublist, .gallery-set, .card-set, .grid, .about-box__list, .menu {
+.gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .menu {
   padding-left: 0;
   list-style: none;
 }
@@ -422,7 +422,7 @@ img {
   margin-bottom: 48px;
 }
 
-.reviews__img {
+.reviews__thumb {
   margin-bottom: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -430,14 +430,20 @@ img {
   height: 100px;
   border-radius: 50%;
   background-color: #202738;
+  overflow: hidden;
 }
 
 .reviews__text {
   max-width: 865px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 1.36;
+}
+
+.reviews__list .reviews__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .footer {
