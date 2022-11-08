@@ -627,4 +627,36 @@ img {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.menu-page__title {
+  max-width: 465px;
+}
+
+.menu-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu-page__list .menu-page__item:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.menu-page__wrap {
+  max-width: 415px;
+}
+.menu-page__list .menu-page__item:nth-child(even) .menu-page__wrap {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.menu-page__mb {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
