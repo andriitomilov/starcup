@@ -5,7 +5,7 @@
   margin-bottom: 48px;
 }
 .reviews__thumb {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
@@ -14,21 +14,27 @@
 
   background-color: $color-primary;
   overflow: hidden;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 70px;
+  }
 }
 .reviews__text {
-  max-width: 865px;
+  
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
-  font-size: 25px;
-  line-height: 1.36;
+  @media screen and (min-width: 992px) {
+    max-width: 865px;
+    font-size: 25px;
+    line-height: 1.36;
+  }
 }
 
-.reviews__list{
+.reviews__list {
   @extend %list;
 }
 
-.reviews__list .reviews__item:not(:last-child){
+.reviews__list .reviews__item:not(:last-child) {
   margin-bottom: 30px;
 }

@@ -7,5 +7,14 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     speed: 300,
     dots: true,
+    // arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 });

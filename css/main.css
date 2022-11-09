@@ -928,7 +928,7 @@ img {
 }
 
 .reviews__thumb {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
@@ -937,14 +937,23 @@ img {
   background-color: #202738;
   overflow: hidden;
 }
+@media screen and (min-width: 992px) {
+  .reviews__thumb {
+    margin-bottom: 70px;
+  }
+}
 
 .reviews__text {
-  max-width: 865px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-size: 25px;
-  line-height: 1.36;
+}
+@media screen and (min-width: 992px) {
+  .reviews__text {
+    max-width: 865px;
+    font-size: 25px;
+    line-height: 1.36;
+  }
 }
 
 .reviews__list .reviews__item:not(:last-child) {
