@@ -1,11 +1,15 @@
 .title {
-    position: relative;
+  position: relative;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.36;
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (min-width){
+    font-size: 25px;
+  }
 }
 
 .title__after::after{

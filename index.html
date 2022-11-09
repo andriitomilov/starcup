@@ -15,9 +15,6 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -36,6 +33,13 @@
                 <li class="menu__item"><a href="./menu.html" class="menu__link">Menu</a></li>
                 <li class="menu__item"><a href="./contacts-page.html" class="menu__link">Contacts</a></li>
             </ul>
+
+            <button class=" menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="50px" height="50px" aria-label="Перемикач мобільного меню">
+                    <use class="" href="./images/icons.svg#menu-open"></use>
+                </svg>
+            </button>
+
         </nav>
     </header>
 
@@ -61,7 +65,7 @@
                 </div>
             </div>
         </section>
-
+<!-- 
         <section class="about section">
             <div class="container about__container">
                 <div class="about-box">
@@ -280,11 +284,11 @@
                 </ul>
 
             </div>
-        </section>
+        </section> -->
 
     </main>
 
-    <footer class="footer section">
+    <!-- <footer class="footer section">
         <div class="container footer__container">
             <div class="footer__box">
                 <h2 class="title title--accent footer__title">You have questions</h2>
@@ -303,13 +307,38 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+        <div class="menu-container__wrap">
+            <button class="menu-toggle menu-container__btn  js-close-menu" type="button">
+                <svg width="30px" height="30px" aria-label="Перемикач мобільного меню">
+                    <use class="" href="./images/icons.svg#menu-close"></use>
+                </svg>
+            </button>
+            
+            <ul class="menu-container__list">
+                <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Main</a></li>
+                <li class="menu-container__item"><a href="./about.html" class="menu-container__link">About</a></li>
+                <li class="menu-container__item"><a href="./gallery.html" class="menu-container__link">Gallery</a></li>
+                <li class="menu-container__item"><a href="./menu.html" class="menu-container__link">Menu</a></li>
+                <li class="menu-container__item"><a href="./contacts-page.html" class="menu-container__link">Contacts</a></li>
+            </ul>
+        </div>
+        
+    
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/slick.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

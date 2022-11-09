@@ -3,9 +3,17 @@
     padding: 0 15px;
 }
 .container{
-    width: 1095px;
+    
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (min-width: 1450px) {
+        width: 1095px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 720px;
+    }
 }
 .container__small {
     width: 615px;

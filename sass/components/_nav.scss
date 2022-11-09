@@ -1,37 +1,65 @@
 .nav {
-    @include centeredByFlex();
-    flex-direction: column;
+  @include centeredByFlex(flex, space-between, center);
 
+  padding-right: 15px;
+
+  @media screen and (min-width: 1450px) {
+    padding-right: 0;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+  }
 }
 .logo {
+  color: $color-accent;
+  
+  @media screen and (min-width: 1450px) {
     margin-bottom: 50px;
-    color: $color-accent;
+  }
 }
 .logo__icon {
-    fill: currentColor;
+  fill: currentColor;
+  width: 150px;
+  height: auto;
+  @media screen and (min-width: 768px){
+    width: 255px;
+  }
 }
 .menu {
-    @extend %list;
+  @extend %list;
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    @include centeredByFlex();
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 1450px) {
+    display: block;
+  }
 }
 .menu__item {
-    &:not(:last-child){
-        margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1450px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
+  }
 }
 .menu__link {
-    display: inline-block;   
+  display: inline-block;
 
-    font-family: $font-family-secondary;
-    font-size: 32px;
-    line-height: 1.16;
+  font-family: $font-family-secondary;
+  font-size: 32px;
+  line-height: 1.16;
 
-    color: $color-secondary;
+  color: $color-secondary;
 
-    transition: color $transition;
+  transition: color $transition;
 
-    &:hover,
-    &:focus {
-        color: $color-accent
-    }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
