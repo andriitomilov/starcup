@@ -1,4 +1,4 @@
-.gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .menu {
+.gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .slick-dots, .menu {
   padding-left: 0;
   list-style: none;
 }
@@ -151,6 +151,96 @@ img {
   transition: background-color 250ms ease-in-out;
 }
 .btn-link:hover, .btn-link:focus {
+  background-color: #c46b48;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-next,
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 70px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  background-color: transparent;
+}
+
+.slick-prev:before {
+  background-image: url(../images/left-arrow.svg);
+}
+
+.slick-next:before {
+  background-image: url(../images/right-arrow.svg);
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 70px;
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-position: center;
+  background-position: no-repeat;
+  background-size: 50px 70px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #c46b48;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  cursor: pointer;
+}
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active {
   background-color: #c46b48;
 }
 
