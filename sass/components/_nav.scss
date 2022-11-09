@@ -3,7 +3,7 @@
 
   padding-right: 15px;
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1490px) {
     padding-right: 0;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
 .logo {
   color: $color-accent;
   
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1490px) {
     margin-bottom: 50px;
   }
 }
@@ -34,14 +34,14 @@
     gap: 15px;
   }
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1490px) {
     display: block;
   }
 }
 .nav-menu__item {
   text-align: center;
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1490px) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }

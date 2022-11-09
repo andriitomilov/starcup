@@ -10,7 +10,8 @@
   background-image: linear-gradient($bg-color-hero-overlay-desktop, $bg-color-hero-overlay-desktop),
     url(../images/hero__overlay.jpg);
   @include centeredBackground();
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 992px) {
     height: 713px;
   }
 }
@@ -18,12 +19,12 @@
 .hero__content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-
+  
 
   color: $color-secondary;
   background-color: $bg-color-accent;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -49,9 +50,13 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
-    max-width: 480px;
     font-size: 70px;
   }
+
+  @media screen and (min-width: 992px){
+    max-width: 480px;
+  }
+
 }
 .hero__text {
   line-height: 1.37;
@@ -73,7 +78,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     justify-content: space-between;
     gap: 60px;
   }

@@ -100,7 +100,7 @@ img {
           align-items: center;
   padding-right: 15px;
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .nav {
     padding-right: 0;
     -webkit-box-orient: vertical;
@@ -117,7 +117,7 @@ img {
 .logo {
   color: #c46b48;
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .logo {
     margin-bottom: 50px;
   }
@@ -151,7 +151,7 @@ img {
     gap: 15px;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .nav-menu {
     display: block;
   }
@@ -160,7 +160,7 @@ img {
 .nav-menu__item {
   text-align: center;
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .nav-menu__item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -447,7 +447,7 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .hero__overlay {
     height: 713px;
   }
@@ -459,7 +459,7 @@ img {
   color: #FFFFFF;
   background-color: rgba(196, 107, 72, 0.6);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .hero__content-box {
     position: absolute;
     top: 0;
@@ -489,8 +489,12 @@ img {
 @media screen and (min-width: 768px) {
   .hero__title {
     margin-bottom: 50px;
-    max-width: 480px;
     font-size: 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__title {
+    max-width: 480px;
   }
 }
 
@@ -525,7 +529,7 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .working-hours {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
