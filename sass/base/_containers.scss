@@ -22,7 +22,10 @@
   
 }
 .container__small {
-    width: 615px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+     @media screen and (min-width: 768px) {
+        width: 615px;
+    }
 }

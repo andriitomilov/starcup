@@ -11,20 +11,28 @@
     @include centeredBackground();
 }
 .galery__container {
-  background-color: $color-primary;
+  background-color: $bg-galery-section;
 }
 .galery__title {
-  margin-bottom: 104px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px){
+    margin-bottom: 104px;
+  }
 }
 .galery__text {
-  margin-bottom: 104px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 405px;
-
-  font-size: 29px;
+  font-size: 20px;
   line-height: 1.34;
 
   color: $color-secondary;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 104px;
+    max-width: 405px;
+
+    font-size: 29px;
+  }
 }
 
