@@ -7,13 +7,19 @@
     margin: 0 auto;
     padding: 0 15px;
 
-    @media screen and (min-width: 1450px) {
-        width: 1095px;
-    }
-
     @media screen and (min-width: 768px) {
         width: 720px;
     }
+    @media screen and (min-width: 992px) {
+        width: 920px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1140px;
+    }
+    @media screen and (min-width: 1450px) {
+        width: 1095px;
+    }
+  
 }
 .container__small {
     width: 615px;
