@@ -37,11 +37,12 @@
   pointer-events: none;
   visibility: hidden;
 
-  transition: opacity $transition;
+  transition: opacity $transition, visibility $transition;
 
   &.is-open  {
     opacity: 1;
     visibility: visible;
+    pointer-events:all;
   }
 }
 .menu-container__wrap {
@@ -79,4 +80,10 @@
 .menu-container__link {
   color: $color-secondary;
   font-size: 20px;
+
+  transition: color $transition;
+
+  &:hover, &:focus{
+    color: $color-accent;
+  }
 }

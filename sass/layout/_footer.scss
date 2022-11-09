@@ -3,12 +3,23 @@
     background-color: $bg-color-footer
 }
 .footer__container{
-    @include centeredByFlex(flex, space-between, center);
+    @media screen and (min-width: 1200px) {
+        @include centeredByFlex(flex, space-between, center);
+    }
+    
 }
 .footer__box {
+    @media screen and (max-width: 1199px) {
+        .footer__container &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
 }
 .footer__title{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+    }
 }
 .footer__link {
     color: inherit;
