@@ -7,7 +7,7 @@
   margin: 0 auto;
   max-width: 1245px;
 
-  background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay),
+  background-image: linear-gradient($bg-color-hero-overlay-desktop, $bg-color-hero-overlay-desktop),
     url(../images/hero__overlay.jpg);
   @include centeredBackground();
   @media screen and (min-width: 768px) {

@@ -1,30 +1,67 @@
 .team {
-    background-color: $color-primary;
-    background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay);
-}   
-.team__overlay {
-    margin: 0 auto;
-    max-width: 1245px;
+  background-color: $color-primary;
+  background-image: linear-gradient($bg-color-hero-overlay-mobile, $bg-color-hero-overlay-mobile);
 
-    background-color: $color-primary;
-    background-image: linear-gradient($bg-color-hero-overlay, $bg-color-hero-overlay), url(../images/team-bg.jpg);
-    @include centeredBackground(no-repeat, left center, contain);
+  @media screen and (min-width: 1490px) {
+    background-image: linear-gradient(
+      $bg-color-hero-overlay-desktop,
+      $bg-color-hero-overlay-desktop
+    );
+  }
+}
+.team__overlay {
+  margin: 0 auto;
+  max-width: 1245px;
+
+  background-color: $color-primary;
+  background-image: linear-gradient($bg-color-hero-overlay-mobile, $bg-color-hero-overlay-mobile),
+    url(../images/team-bg.jpg);
+  @include centeredBackground(no-repeat, center center, cover);
+
+  @media screen and (min-width: 1200px) {
+    background-position: left center;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 1490px) {
+    background-image: linear-gradient(
+        $bg-color-hero-overlay-desktop,
+        $bg-color-hero-overlay-desktop
+      ),
+      url(../images/team-bg.jpg);
+  }
 }
 .team__box {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
     max-width: 440px;
     margin-left: auto;
+    text-align: left;
+  }
 }
 
 .team__title {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 55px;
+  }
 }
 
 .team__subtitle {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 70px;
+  }
 }
 .team__text {
-    margin-bottom: 72px;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    color: $color-secondary;
+  font-weight: 700;
+  color: $color-secondary;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+  }
 }

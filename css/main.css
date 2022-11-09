@@ -1,4 +1,4 @@
-.gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .menu-container__list, .slick-dots, .menu {
+.gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .about__list, .menu-container__list, .slick-dots, .menu {
   padding-left: 0;
   list-style: none;
 }
@@ -9,7 +9,7 @@ body {
   line-height: 1.35;
   color: #202738;
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   body {
     padding-left: 355px;
   }
@@ -53,7 +53,7 @@ img {
     width: 1140px;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .container {
     width: 1095px;
   }
@@ -412,7 +412,7 @@ img {
 .header {
   background-color: #202738;
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1490px) {
   .header {
     position: fixed;
     top: 0;
@@ -612,26 +612,34 @@ img {
 }
 
 .about__list {
-  padding-left: 30px;
-  list-style: none;
   margin-bottom: 50px;
 }
 .about__list .about__item:not(:last-child) {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .about__list {
+    padding-left: 30px;
+  }
+}
 
-@media screen and (max-width: 767px) {
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
   .about__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -686,38 +694,77 @@ img {
 
 .team {
   background-color: #202738;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+@media screen and (min-width: 1490px) {
+  .team {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
 }
 
 .team__overlay {
   margin: 0 auto;
   max-width: 1245px;
   background-color: #202738;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/team-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/team-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/team-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/team-bg.jpg);
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .team__overlay {
+    background-position: left center;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .team__overlay {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/team-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/team-bg.jpg);
+  }
 }
 
 .team__box {
-  max-width: 440px;
-  margin-left: auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team__box {
+    max-width: 440px;
+    margin-left: auto;
+    text-align: left;
+  }
 }
 
 .team__title {
-  margin-bottom: 55px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-bottom: 55px;
+  }
 }
 
 .team__subtitle {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__subtitle {
+    margin-bottom: 70px;
+  }
 }
 
 .team__text {
-  margin-bottom: 72px;
+  margin-bottom: 30px;
   font-weight: 700;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .team__text {
+    margin-bottom: 72px;
+  }
 }
 
 .grid {
