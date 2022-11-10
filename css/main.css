@@ -1017,16 +1017,23 @@ img {
   color: #FFFFFF;
 }
 
-.about-hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+@media screen and (max-width: 991px) {
+  .about-hero__container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .about-hero__overlay {
@@ -1040,20 +1047,58 @@ img {
 }
 
 .about-hero__title {
-  margin-bottom: 60px;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .about-hero__title {
+    display: block;
+    margin-bottom: 60px;
+    font-family: "Original Surfer", cursive;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1, 26;
+  }
+}
+
+.about-hero__title--mobile {
+  margin-bottom: 30px;
   font-family: "Original Surfer", cursive;
   font-weight: 400;
-  font-size: 70px;
-  line-height: 1, 26;
+  font-size: 40px;
+  line-height: 1.26;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .about-hero__title--mobile {
+    margin-bottom: 60px;
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-hero__title--mobile {
+    display: none;
+  }
 }
 
 .about-hero__content-box {
-  padding: 222px 93px 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
   background-color: rgba(196, 107, 72, 0.6);
+}
+@media screen and (min-width: 992px) {
+  .about-hero__content-box {
+    padding: 222px 93px 70px;
+    text-align: left;
+  }
 }
 
 .about-hero__subtitle {
-  margin-bottom: 63px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about-hero__subtitle {
+    margin-bottom: 60px;
+  }
 }
 
 .about-hero__text {

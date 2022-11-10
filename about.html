@@ -48,6 +48,7 @@
                 <div class="container about-hero__container">
                     <h1 class="about-hero__title">About us</h1>
                     <div class="about-hero__content-box">
+                        <h1 class="about-hero__title--mobile">About us</h1>
                         <h2 class="title about-hero__subtitle">We are open daily</h2>
                         <p class="about-hero__text">7 : 00 - 20 : 00</p>
                     </div>
@@ -55,7 +56,7 @@
             </div>
         </section>
 
-        <section class="about-desc section">
+        <!-- <section class="about-desc section">
             <div class="container about-desc__container">
                 <div class="about-box">
                     <h2 class="title title--accent title__after about__title">About our cafe</h2>
@@ -162,11 +163,11 @@
                     You can calmly discuss work issues over a cup of coffee.
                 </p>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
-    <footer class="footer section">
+    <!-- <footer class="footer section">
         <div class="container footer__container">
             <div class="footer__box">
                 <h2 class="title title--accent footer__title">You have questions</h2>
@@ -185,8 +186,34 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+    
+        <div class="menu-container__wrap">
+            <button class="menu-toggle menu-container__btn  js-close-menu" type="button">
+                <svg width="30px" height="30px" aria-label="Перемикач мобільного меню">
+                    <use class="" href="./images/icons.svg#menu-close"></use>
+                </svg>
+            </button>
+    
+            <ul class="menu-container__list">
+                <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Main</a></li>
+                <li class="menu-container__item"><a href="./about.html" class="menu-container__link">About</a></li>
+                <li class="menu-container__item"><a href="./gallery.html" class="menu-container__link">Gallery</a></li>
+                <li class="menu-container__item"><a href="./menu.html" class="menu-container__link">Menu</a></li>
+                <li class="menu-container__item"><a href="./contacts-page.html" class="menu-container__link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    
+    
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
