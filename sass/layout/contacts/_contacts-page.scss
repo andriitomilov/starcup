@@ -1,10 +1,23 @@
 .contacts-page__list {
-  @include centeredByFlex($content: space-between);
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    @include centeredByFlex($content: space-between);
+  }
 }
 .contacts-page__item {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .contacts-page__list &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 .contacts-page__wrap {
   display: flex;
@@ -72,7 +85,7 @@
 
   transition: border-color $transition;
   &:focus,
-  &:hover{
+  &:hover {
     border-color: $color-secondary;
   }
 }
@@ -86,12 +99,12 @@
   resize: none;
 }
 
-.request-form__field::placeholder{
-    color: $color-form-border;
+.request-form__field::placeholder {
+  color: $color-form-border;
 
-    transition: color $transition;
+  transition: color $transition;
 }
 .request-form__field:hover::placeholder,
-.request-form__field:focus::placeholder{
-    color: $color-secondary;
+.request-form__field:focus::placeholder {
+  color: $color-secondary;
 }
