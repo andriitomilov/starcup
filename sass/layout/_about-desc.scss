@@ -1,12 +1,33 @@
 .about-desc__container {
+    @media screen and  (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 30px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+  }
 }
-.about-desc__content{
+.about-desc__content {
+  
+  @media screen and (min-width: 768px) {
     max-width: 511px;
+  }
+}
+.about__list--mb{
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.about-desc__content--mb-0{
+    margin-bottom: 0;
 }
 .about-desc__box {
-    & p:not(:last-child){
-        margin-bottom: 20px;
-    }
+  & p:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
