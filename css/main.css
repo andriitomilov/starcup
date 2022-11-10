@@ -1110,7 +1110,7 @@ img {
     font-family: "Original Surfer", cursive;
     font-weight: 400;
     font-size: 70px;
-    line-height: 1, 26;
+    line-height: 1.26;
   }
 }
 
@@ -1400,7 +1400,12 @@ img {
 }
 
 .menu-page__title {
-  max-width: 465px;
+  max-width: 430px;
+}
+@media screen and (min-width: 1200px) {
+  .menu-page__title {
+    max-width: 465px;
+  }
 }
 
 .menu-page__item {
