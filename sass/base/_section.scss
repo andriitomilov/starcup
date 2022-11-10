@@ -7,9 +7,34 @@
 }
 
 .section--large-top{
-    padding-top: 324px;
+    padding-top: 60px;
+    @media screen and (min-width: 768px){
+        padding-top: 225px;;
+    }
+    @media screen and (min-width: 992px){
+        padding-top: 255px;
+    }
+    @media screen and (min-width:1200px){
+        padding-top: 324px;
+    }
 }
 .section--bottom-large{
-    padding-bottom: 354px;
+    padding-bottom: 60px;
+    @media screen and (min-width:768px){
+        padding-bottom: 200px;;
+    }
+    @media screen and (min-width:992px){
+        padding-bottom: 235px;;
+    }
+    @media screen and (min-width:1200px){
+        padding-bottom: 255px;
+    }
+     @media screen and (min-width:1200px){
+        padding-bottom: 285px;
+    }
+    @media screen and (min-width:1490px){
+        padding-bottom: 304px;
+    }
+    
 }
 
