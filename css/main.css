@@ -1,4 +1,4 @@
-.contacts-page__list, .menu-page__list, .gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .about__list, .menu-container__list, .slick-dots, .nav-menu {
+.request-form__list, .contacts-page__list, .menu-page__list, .gallery-sublist, .gallery-set, .card-set, .reviews__list, .grid, .about-box__list, .about__list, .menu-container__list, .slick-dots, .nav-menu {
   padding-left: 0;
   list-style: none;
 }
@@ -1548,21 +1548,36 @@ img {
 }
 
 .contacts-form__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  .contacts-form__subtitle {
+    margin-bottom: 50px;
+  }
 }
 
-.request-form__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
+@media screen and (min-width: 992px) {
+  .request-form__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
 }
 
-.request-form__list {
-  width: 510px;
+@media screen and (max-width: 991px) {
+  .request-form__list {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-form__list {
+    width: 510px;
+  }
 }
 
 .request-form__list .request-form__item:not(:last-child) {
@@ -1584,12 +1599,34 @@ img {
 
 .request-form__input {
   width: 100%;
-  height: 50px;
+  height: 40px;
+}
+@media screen and (min-width: 992px) {
+  .request-form__input {
+    width: 420px;
+    height: 50px;
+  }
 }
 
 .request-form__text-area {
-  width: 510px;
+  width: 100%;
   resize: none;
+}
+@media screen and (max-width: 991px) {
+  .request-form__text-area {
+    margin-bottom: 30px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .request-form__text-area {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-form__text-area {
+    width: 510px;
+  }
 }
 
 .request-form__field::-webkit-input-placeholder {
