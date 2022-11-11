@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -31,11 +31,11 @@
             <ul class="nav-menu">
                 <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link">Main</a></li>
                 <li class="nav-menu__item"><a href="./about.html" class="nav-menu__link">About</a></li>
-                <li class="nav-menu__item"><a href="./gallery.html" class="nav-menu__link">Galery</a></li>
+                <li class="nav-menu__item"><a href="./gallery.html" class="nav-menu__link">Gallery</a></li>
                 <li class="nav-menu__item"><a href="./menu.html" class="nav-menu__link">Menu</a></li>
                 <li class="nav-menu__item"><a href="./contacts-page.html" class="nav-menu__link">Contacts</a></li>
             </ul>
-            
+
             <button class=" menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="50px" height="50px" aria-label="Перемикач мобільного меню">
                     <use class="" href="./images/icons.svg#menu-open"></use>
@@ -64,13 +64,17 @@
                 <ul class="gallery-set">
                     <li class="gallery-set__item">
                         <div class="gallery-page__wrap">
-                            <img class="gallery-set__img" src="./images/gallery-page/gallery-img-01.jpg" alt="cup of coffee" width="500" height="375">
-                            
+                            <img class="gallery-set__img"
+                                srcset="./images/gallery-page/gallery-img-01.webp 1x, ./images/gallery-page/gallery-img-01@2x.webp 2x, ./images/gallery-page/gallery-img-01@3x.webp 3x"
+                                src="./images/gallery-page/gallery-img-01.webp" alt="cup of coffee" width="500"
+                                height="375">
+
                             <div class="gallery-set__wrap">
                                 <h2 class="title title--accent title__after gallery-page__title">Drawings om coffee</h2>
                                 <p class="subtitle gallery-page-subtitle">Latte art from professionals</p>
                                 <p class="gellery-page__content">
-                                    Look at what drawings our guys create on coffee! They are taught this in special courses. Therefore, your coffee
+                                    Look at what drawings our guys create on coffee! They are taught this in special
+                                    courses. Therefore, your coffee
                                     will be
                                     not only tasty, but also beautiful!
                                 </p>
@@ -78,58 +82,96 @@
                         </div>
 
                         <ul class="gallery-sublist">
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-02.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-03.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-04.jpg" alt="cup of coffee" width="250" height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-02.webp 1x, ./images/gallery-page/gallery-img-02@2x.webp 2x, ./images/gallery-page/gallery-img-02@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-02.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-03.webp 1x, ./images/gallery-page/gallery-img-03@2x.webp 2x, ./images/gallery-page/gallery-img-03@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-03.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-04.webp 1x, ./images/gallery-page/gallery-img-04@2x.webp 2x, ./images/gallery-page/gallery-img-04@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-04.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
                         </ul>
                     </li>
 
                     <li class="gallery-set__item">
                         <div class="gallery-page__wrap">
-                            <img class="gallery-set__img" src="./images/gallery-page/gallery-img-05.jpg" alt="cup of coffee" width="500" height="375">
-                            
+                            <img class="gallery-set__img"
+                                srcset="./images/gallery-page/gallery-img-05.webp 1x, ./images/gallery-page/gallery-img-05@2x.webp 2x, ./images/gallery-page/gallery-img-05@3x.webp 3x"
+                                src="./images/gallery-page/gallery-img-05.webp" alt="cup of coffee" width="500"
+                                height="375">
+
                             <div class="gallery-set__wrap">
                                 <h2 class="title title--accent title__after gallery-page__title">Our interior</h2>
                                 <p class="subtitle gallery-page-subtitle">The interior of our cafe</p>
                                 <p class="gellery-page__content">
-                                    We have a lot of interesting decor items that perfectly complement the interior. See what the cafe looks like.
+                                    We have a lot of interesting decor items that perfectly complement the interior. See
+                                    what the cafe looks like.
                                     You will
                                     definitely like us!
                                 </p>
                             </div>
                         </div>
-                        
+
 
                         <ul class="gallery-sublist">
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-06.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-07.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-08.jpg" alt="cup of coffee" width="250" height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-06.webp 1x, ./images/gallery-page/gallery-img-06@2x.webp 2x ,./images/gallery-page/gallery-img-06@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-06.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-07.webp 1x, ./images/gallery-page/gallery-img-07@2x.webp 2x, ./images/gallery-page/gallery-img-07@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-07.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-08.webp 1x, ./images/gallery-page/gallery-img-08@2x.webp 2x, ./images/gallery-page/gallery-img-08@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-08.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
                         </ul>
                     </li>
 
                     <li class="gallery-set__item">
                         <div class="gallery-page__wrap">
-                            <img class="gallery-set__img" src="./images/gallery-page/gallery-img-09.jpg" alt="cup of coffee" width="500" height="375">
-                            
+                            <img class="gallery-set__img"
+                                srcset="./images/gallery-page/gallery-img-09.webp 1x, ./images/gallery-page/gallery-img-09@2x.webp 2x, ./images/gallery-page/gallery-img-09@3x.webp 3x"
+                                src="./images/gallery-page/gallery-img-09.webp" alt="cup of coffee" width="500"
+                                height="375">
+
                             <div class="gallery-set__wrap">
-                                <h2 class="title title--accent title__after gallery-page__title">The working process</h2>
+                                <h2 class="title title--accent title__after gallery-page__title">The working process
+                                </h2>
                                 <p class="subtitle gallery-page-subtitle">Our masters in action</p>
                                 <p class="gellery-page__content">
-                                    We love taking pictures while we work. It seems that such photos best convey the mood, they are alive and real.
+                                    We love taking pictures while we work. It seems that such photos best convey the
+                                    mood, they are alive and real.
                                 </p>
                             </div>
                         </div>
-                        
+
 
                         <ul class="gallery-sublist">
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-10.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-11.jpg" alt="cup of coffee" width="250" height="312"></li>
-                            <li class="gallery-sublist__item"><img src="./images/gallery-page/gallery-img-12.jpg" alt="cup of coffee" width="250" height="312"></li>
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-10.webp 1x, ./images/gallery-page/gallery-img-10@2x.webp 2x, ./images/gallery-page/gallery-img-10@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-10.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-11.webp 1x, ./images/gallery-page/gallery-img-11@2x.webp 2x, ./images/gallery-page/gallery-img-11@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-11.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
+
+                            <li class="gallery-sublist__item"><img
+                                    srcset="./images/gallery-page/gallery-img-12.webp 1x, ./images/gallery-page/gallery-img-12@2x.webp 2x, ./images/gallery-page/gallery-img-12@3x.webp 3x"
+                                    src="./images/gallery-page/gallery-img-12.webp" alt="cup of coffee" width="250"
+                                    height="312"></li>
                         </ul>
                     </li>
                 </ul>
 
-                
+
             </div>
         </section>
 
@@ -158,25 +200,26 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-    
+
         <div class="menu-container__wrap">
             <button class="menu-toggle menu-container__btn  js-close-menu" type="button">
                 <svg width="30px" height="30px" aria-label="Перемикач мобільного меню">
                     <use class="" href="./images/icons.svg#menu-close"></use>
                 </svg>
             </button>
-    
+
             <ul class="menu-container__list">
                 <li class="menu-container__item"><a href="./index.html" class="menu-container__link">Main</a></li>
                 <li class="menu-container__item"><a href="./about.html" class="menu-container__link">About</a></li>
                 <li class="menu-container__item"><a href="./gallery.html" class="menu-container__link">Gallery</a></li>
                 <li class="menu-container__item"><a href="./menu.html" class="menu-container__link">Menu</a></li>
-                <li class="menu-container__item"><a href="./contacts-page.html" class="menu-container__link">Contacts</a>
+                <li class="menu-container__item"><a href="./contacts-page.html"
+                        class="menu-container__link">Contacts</a>
                 </li>
             </ul>
         </div>
-    
-    
+
+
     </div>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
