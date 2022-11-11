@@ -7,8 +7,21 @@
   margin: 0 auto;
   max-width: 1245px;
 
+  background-color: $color-secondary;
+
   background-image: linear-gradient($bg-color-hero-overlay-desktop, $bg-color-hero-overlay-desktop),
-    url(../images/hero__overlay.jpg);
+    url(../images/main/hero__overlay.webp);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient($bg-color-hero-overlay-desktop, $bg-color-hero-overlay-desktop),
+    url(../images/main/hero__overlay@2x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: linear-gradient($bg-color-hero-overlay-desktop, $bg-color-hero-overlay-desktop),
+    url(../images/main/hero__overlay@3x.webp);
+  }
+
   @include centeredBackground();
 
   @media screen and (min-width: 992px) {
@@ -19,7 +32,6 @@
 .hero__content-box {
   padding-top: 60px;
   padding-bottom: 60px;
-  
 
   color: $color-secondary;
   background-color: $bg-color-accent;
@@ -53,10 +65,9 @@
     font-size: 70px;
   }
 
-  @media screen and (min-width: 992px){
+  @media screen and (min-width: 992px) {
     max-width: 480px;
   }
-
 }
 .hero__text {
   line-height: 1.37;
