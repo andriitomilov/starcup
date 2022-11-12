@@ -2,7 +2,7 @@
   background-color: $color-primary;
   background-image: linear-gradient($bg-color-hero-overlay-mobile, $bg-color-hero-overlay-mobile);
 
-  @media screen and (min-width: 1490px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       $bg-color-hero-overlay-desktop,
       $bg-color-hero-overlay-desktop
@@ -39,7 +39,7 @@
         $bg-color-hero-overlay-desktop,
         $bg-color-hero-overlay-desktop
       ),
-      url(../images/team-bg.jpg);
+      url(../images/main/team-bg.webp);
   }
 }
 .team__box {
