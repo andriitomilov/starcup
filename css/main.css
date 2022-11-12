@@ -1334,6 +1334,7 @@ img {
 }
 
 .about-team__galery {
+  overflow-x: hidden;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -1366,6 +1367,10 @@ img {
   .about-team__galery {
     width: 100%;
   }
+}
+
+.gallery-page__container {
+  overflow-x: hidden;
 }
 
 .gallery-page .gallery-set__item:not(:last-child) {

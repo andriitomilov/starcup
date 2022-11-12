@@ -1,6 +1,9 @@
 .gallery-page {
+  
 }
-
+.gallery-page__container{
+  overflow-x: hidden;
+}
 .gallery-set {
   @extend %list;
 }

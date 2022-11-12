@@ -7,6 +7,7 @@
 }
 .about-team__container {
   position: relative;
+  
 }
 .card-set {
   @extend %list;
@@ -53,6 +54,7 @@
 }
 
 .about-team__galery {
+  overflow-x: hidden;
   display: none;
   @media screen and (min-width: 768px) {
     position: absolute;
